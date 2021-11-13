@@ -1,0 +1,242 @@
+body {
+  
+  background-color: #ebeef2;
+  margin: 0;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  font-family: Lato, sans-serif;
+  line-height: 125%;
+}
+
+header {
+  width: 100vw;
+  position :fixed;
+  top:0;
+}
+
+.header-top {
+  height: 5vh;
+  background-color: white;
+  padding-left: 10%;
+  padding-right: 10%;
+  color: grey;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+@media only screen and (max-width: 600px) {
+  .header-top {
+    padding-left: 0%;
+    padding-right: 0%;
+  }
+}
+
+.header-top a {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: lato, sans-serif;
+  color: grey;
+  text-decoration: none;
+}
+
+.header-top a:hover {
+  color: #ef8422;
+}
+
+.header-bot {
+  padding-left: 10%;
+  padding-right: 10%;
+  font-family: lato, sans-serif;
+  background-color: #2947a0;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+@media only screen and (max-width: 600px) {
+  .header-bot {
+    padding-left: 0%;
+    padding-right: 0%;
+    font-size: 0.8em;
+  }
+
+  .header-bot img {
+    height: 25px;
+  }
+}
+
+.header-bot > div > * {
+  border-radius: 20%;
+  font-size: 1.3em;
+  color: white;
+  text-align: center;
+}
+
+.header-bot > div > a.button {
+  font-weight: bold;
+  display: inline-block;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(28, 190, 131, 1);
+  border: 1px solid rgba(28, 190, 131, 1);
+  border-radius: 100px;
+  padding: 0.3em 1.2em;
+  margin: 5px;
+  background-size: 200% 100%;
+  background-image: linear-gradient(
+    to right,
+    transparent 50%,
+    rgba(28, 190, 131, 1) 50%
+  );
+  transition: background-position 0.3s cubic-bezier(0.19, 1, 0.22, 1) 0.1s,
+    color 0.5s ease 0s, background-color 0.5s ease;
+}
+
+.header-bot > div > a.button:hover {
+  color: #ef8422;
+  background-color: transparent;
+
+  background-position: -100% 100%;
+}
+
+.main-content-container {
+  padding: 40px;
+  border-radius: 15px;
+  margin: 10vh;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  background-color: white;
+  min-width: 600px;
+  max-width: 50vw;
+}
+
+@media only screen and (max-width: 600px) {
+  .main-content-container {
+    margin-top: 100px;
+    padding: 20px;
+    border-radius: 15px;
+    margin: 40px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    background-color: white;
+    min-width: 80vw;
+  }
+}
+
+.header-bot-contact {
+  width: 50%;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+body > header > div.header-bot > div > span > a {
+  text-decoration: none;
+  color: white;
+}
+
+body > header > div.header-bot > div > img {
+  height: 35px;
+}
+
+.banner-main-content {
+  width: 85%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.title {
+  color: #2947a0;
+  font-family: lato, sans-serif;
+  font-size: 1.5em;
+  font-weight: 700;
+}
+
+.text-box {
+  width: 100%;
+  display: flex;
+  flex-flow: column wrap;
+  text-align: justify;
+  font-size: 0.95em;
+}
+
+.rowflex {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+fieldset {
+  border-radius: 2em;
+  border: 2px solid #fb8206;
+}
+
+.smaller-img {
+  display: block;
+  max-width: 40%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+}
+
+footer {
+  background-image: -webkit-radial-gradient(
+    65% 50%,
+    ellipse cover,
+    #457db7 0,
+    #071d63 100%
+  );
+  min-height: 200px;
+  width: 100%;
+}
+
+.pros_ul > li::marker {
+  color: green;
+  font-size: 1.4em;
+}
+
+.cons_ul > li::marker {
+  color: red;
+  font-size: 1.4em;
+}
+
+.docs {
+  min-height: 20 px;
+  padding: 19 px;
+  margin-bottom: 20 px;
+  background-color: #f5f5f5;
+  border: 1 px solid #e3e3e3;
+  color: #08c;
+}
+
+.docs ul li a:hover {
+  color: #fb8206;
+}
+
+.docs ul li::marker {
+  color: transparent;
+}
+video {
+  max-width: 100%;
+  max-height: 600px;
+}
+
+
+.popup {
+  background-color: #ef8422;
+  padding: 5%;
+  display: none;
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 30%;
+  min-width: 300px;
+
+}

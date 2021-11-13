@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>My Application</title>
+	<meta name="description" content="Maxence Vacheron's application">
+	<meta name="author" content="Maxence Vacheron">
+	<link rel="stylesheet" href="style.css">
+	<script src="mv.js"></script>
+</head>
+
+<body>
+	<header>
+		<div class="header-top">
+			<a href="MaxenceVacheron.pdf">Consulter mon CV</a>
+			<a href="etna-formation.html">Le Rythme de la formation ETNA</a>
+			<a href="#">Connaitre Maxence</a>
+		</div>
+		<div class="header-bot">
+			<img src="logo-MV.png" alt="logo" style="cursor: pointer;" height="50"
+				onclick="window.location ='index.html'">
+			<div class="header-bot-contact">
+				<img src="icon-phone-header.svg" onclick="window.open('tel:0642326333');">
+				<span><a href="" onclick="">Me contacter</a></span>
+				<a id="hire_button"class="button" onclick="popUpContactInfo()">HIRE ME</a>
+				<div id='infomodal'class="popup"><div id='close-popup' onclick="closePopUp()">&#x2715</div><br><span class="title">06 42 32 63 33</span><br><span>vacheronmaxence@gmail.com</span></div>
+			</div>
+
+		</div>
+	</header>
+	<div class="main-content-container">
+		<video muted loop autoplay>
+			<!-- <source src="carve_slowmo.mp4" type="video/mp4"> -->
+			<source src="carve_rain.mp4" type="video/mp4">
+			Your browser does not support the video tag.
+		</video>
+		<br>
+
+		<div class="text-box">
+			<span class="title">Connaître Maxence </span>
+			<br>
+			<p>
+				Passionné de High Tech et d'innovation technologique depuis tout petit, ma soif de comprendre les choses
+				et mon plaisir à les expliquer m'a d'abord poussé à faire une licence de Physique Chimie afin de devenir
+				Professeur au Collège/Lycée.
+				<br>
+				J'ai ensuite décidé de me reconvertir pour devenir developpeur web fullstack.
+				<br>
+				<br>
+				Mon principal hobby est le skate 🛹 électrique ⚡, qui me sert tant à me déplacer au quotidien qu'à
+				partir en randonnée, dans Paris ou en province
+				<br>
+				<br>
+				Le développement 💻 fait bien entendu partie de mes hobbies, notamment sur Raspberry Pi pour faire de
+				petits projets embarqués.
+				<br>
+				<br>
+				Je suis aussi un grand fan du MCU 🎥
+				<br>
+				<br>
+				Finalement j'adore discuter 🗣️ de sujet en tous genres et échanger 💭 avec les personnes qi m'entourent.
+			</p>
+			<br>
+		</div>
+		<video muted loop autoplay>
+			<source src="carve_slowmo.mp4" type="video/mp4">
+			Your browser does not support the video tag.
+		</video>
+	</div>
+	<footer>
+	</footer>
+</body>
+
+</html>
